@@ -2,13 +2,13 @@
 <html>
 
 <head>
-    <meta name="ad.size" content="width=320,height=480">
+    <!-- <meta name="ad.size" content="width=320,height=480"> -->
     <!-- fb版只有以下这两句句头的代码 -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
     <!-- 以下为aw版的下载链接    两种下载api  // FbPlayableAd.onCTAClick();   谷歌的 //ExitApi.exit() -->
-    <script type="text/javascript" src="https://tpc.googlesyndication.com/pagead/gadgets/html5/api/exitapi.js">
+    <!-- <script type="text/javascript" src="https://tpc.googlesyndication.com/pagead/gadgets/html5/api/exitapi.js"> -->
     </script>
     <style type="text/css">
         body {
@@ -973,12 +973,12 @@
                                 })
                 
                                 downloadBtn.on('pointerdown', function(pointer) {
-                                    // FbPlayableAd.onCTAClick();
-                                    ExitApi.exit()
+                                    FbPlayableAd.onCTAClick();
+                                    // ExitApi.exit()
                                 }, this);
                                 downloadBtn.on('touchstart', function(pointer) {
-                                    // FbPlayableAd.onCTAClick();
-                                    ExitApi.exit()
+                                    FbPlayableAd.onCTAClick();
+                                    // ExitApi.exit()
                                 }, this);
                 
                                 //原地弹出
